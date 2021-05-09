@@ -1,0 +1,24 @@
+
+<div class="content-container">
+        {{#if data}}
+            <div class="content-header borderBottom borderTop">
+                <h3>5 comments</h3>
+                <div class="right">
+                    <p>Sort</p>
+                    <a class="btn">Likes</a>
+                </div>
+            </div>
+            {{#data}}
+                <div data-cy="comment" class="content-list borderBottom">
+                    <div class="flex">
+                        <h4>{{ name }}</h4>
+                        <p>{{ likes }} likes</p>
+                    </div>
+                    <p>{{ body }}</p>
+                </div>
+            {{/data}}
+        {{else}}
+            <div>Failed to get comments</div>
+        {{/if}}
+    </div>
+</div>
