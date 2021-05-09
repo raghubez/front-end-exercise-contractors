@@ -61,6 +61,12 @@ Then run the watcher:
 npm run dev
 ```
 
+To run cypress tests:
+
+```sh
+npm run cypress:open
+```
+
 Visit [http://localhost:3000/](http://localhost:3000/) in your web browser and you *should* see a blank webpage with The Telegraph logo and a 'Hello World' message.
 
 The above command will watch and deploy your code. The watchers for CSS and JS files will not take into account changes to new files so make sure you restart the watchers when adding new files. The CSS watcher will only look for changes inside a directory which sits within the `src/css` directory (e.g. `src/css/elements`).
